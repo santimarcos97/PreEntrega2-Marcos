@@ -94,9 +94,24 @@ h1 {
     background-color: black;
 }
 
+.hero-content a:hover {
+    background-color: red;
+    border-radius: 30px;
+    padding: 10px;
+    transition: 2s;
+}
+
 .container {
     display: flex;
     padding-top: 40px;
+    background-color: rgb(163, 163, 163);
+}
+
+.container a:hover {
+    background-color:red;
+    border-radius: 30px;
+    padding: 7px;
+    transition: 2s;
 }
 
 .container img {
@@ -123,12 +138,12 @@ h1 {
 
 .container-content a {
     text-decoration: none;
-    padding: 10px;
+    padding: 7px;
     border: 1px solid black;
     color: white;
-    font-size: 24px;
+    font-size: 20px;
     background-color: black;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 
 .entradas {
