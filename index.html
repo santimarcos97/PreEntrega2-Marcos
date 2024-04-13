@@ -11,23 +11,42 @@
 </head>
 <body>
     <header>
-
-        <nav class="nav">
-
-            <a href="index.html" class="nav-link">F1</a>
-
-            <ul class="nav-list">
-                <li><a href="index.html" class="nav-link">Inicio</a></li>
-                <li><a href="pages/entradas.html" class="nav-link">Entradas</a></li>
-                <li><a href="pages/tienda.html" class="nav-link">Tienda</a></li>
-                <li><a href="pages/equipos.html" class="nav-link">Equipos</a></li>
-                <li><a href="pages/pilotos.html" class="nav-link">Pilotos</a></li>
-            </ul>
-        </nav>
-
+        <nav class="navbar bg-red navbar-expand-md font-sans">
+            <div class="container-fluid">
+              <a class="navbar-brand text-white" href="index.html">F1</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end bg-red" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">FORMULA 1</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active text-white" aria-current="page" href="index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="pages/entradas.html">ENTRADAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="pages/tienda.html">TIENDA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="pages/equipos.html">EQUIPOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="pages/pilotos.html">PILOTOS</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
     </header>
         
-    <main>
+    <main class="container-fluid">
 
         <h1>TITULO</h1>
 
