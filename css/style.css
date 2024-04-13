@@ -236,5 +236,255 @@ h1 {
     color: white;
 }
 
+.cars {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "caja1 caja1 caja2 caja2"
+    "caja3 caja3 caja4 caja4"
+    "caja5 caja6 caja7 caja8"
+    "caja9 caja9 caja10 caja10";
+    padding: 10px;
+    gap: 10px;
+    justify-items: center;
+}
+
+.car-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.car-item {
+    display: flex;
+    position: relative;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 400px;
+    max-height: 100%;
+}
+
+.c1 {
+    grid-area: caja1;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    background-color: rgb(189, 189, 189);
+}
+
+.c1 img {
+    height: 83%;
+    align-self: flex-start;
+}
+
+.c2 {
+    grid-area: caja2;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    background-color: rgb(189, 189, 189);
+}
+
+.c2 img {
+    height: 83%;
+    align-self: flex-start;
+}
+
+.c3 {
+    grid-area: caja3;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    background-color: rgb(189, 189, 189);
+}
+
+.c3 img {
+    height: 83%;
+    align-self: flex-start;
+}
+
+.c4 {
+    grid-area: caja4;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    background-color: rgb(189, 189, 189);
+}
+
+.c4 img {
+    height: 83%;
+    align-self: flex-start;
+}
 
 
+.c5 {
+    grid-area: caja5;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    background-color: rgb(189, 189, 189);
+}
+
+.c5 img {
+    height: 83%;
+    align-self: flex-start;
+}
+
+.c6 {
+    grid-area: caja6;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    background-color: rgb(189, 189, 189);
+}
+
+.c6 img {
+    height: 83%;
+    align-self: flex-start;
+}
+
+.c7 {
+    grid-area: caja7;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    background-color: rgb(189, 189, 189);
+}
+
+.c7 img {
+    height: 83%;
+    align-self: flex-start;
+}
+
+.c8 {
+    grid-area: caja8;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    background-color: rgb(189, 189, 189);
+}
+
+.c8 img {
+    height: 83%;
+    align-self: flex-start;
+}
+
+.c9 {
+    grid-area: caja9;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    background-color: rgb(189, 189, 189);
+}
+
+.c9 img {
+    height: 83%;
+    align-self: flex-start;
+}
+
+.c10 {
+    grid-area: caja10;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    background-color: rgb(189, 189, 189);
+}
+
+.c10 img {
+    height: 83%;
+    align-self: flex-start;
+}
+
+.cars a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+/* notice section */
+
+.notice-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "notice1 notice1 notice1 notice2"
+    "notice3 notice4 notice4 notice4";
+    padding: 10px;
+    gap: 10px;
+}
+
+.notice-box img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.notice-content {
+    background-color: rgba(0, 0, 0, 0.336);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    color: white;
+    gap: 10px;
+}
+
+.notice-content h2 {
+    font-size: 2rem;
+}
+
+.notice-content a {
+    color: white;
+    padding: 10px;
+    font-size: 1.5rem;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.notice-content a:hover {
+    background-color: rgba(0, 0, 0, 0.445);
+    transition: 1s;
+}
+
+.notice-box {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.n1 {
+    grid-area: notice1;
+}
+
+.n2 {
+    grid-area: notice2;
+}
+
+.n3 {
+    grid-area: notice3;
+}
+
+.n4 {
+    grid-area: notice4;
+}
