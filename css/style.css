@@ -101,20 +101,20 @@ h1 {
     transition: 2s;
 }
 
-.container {
+.hero-article {
     display: flex;
     padding-top: 40px;
     background-color: rgb(163, 163, 163);
 }
 
-.container a:hover {
+.container-content a:hover {
     background-color:red;
     border-radius: 30px;
     padding: 7px;
     transition: 2s;
 }
 
-.container img {
+.hero-article img {
     width: 50%;
     height: 600px;
     object-fit: cover;
