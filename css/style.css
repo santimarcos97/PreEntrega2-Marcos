@@ -19,13 +19,20 @@ a {
 
 .font-sans {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.font-fm {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 h1 {
     display: flex;
     justify-content: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
     padding: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
 }
 
 .hero {
@@ -36,7 +43,7 @@ h1 {
 
 .hero-content img {
     width: 60%;
-    height: 600px;
+    height: 550px;
     object-fit: cover;
     border-radius: 20px;
     border: 2px solid black;
@@ -55,12 +62,15 @@ h1 {
     font-size: 1.2rem;
     text-align: center;
     padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .hero-content h2 {
     font-size: 2rem;
     text-align: center;
     padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
 }
 
 .hero-content a {
@@ -70,9 +80,11 @@ h1 {
     padding: 10px;
     border: 1px solid black;
     color: white;
-    font-size: 24px;
+    font-size: 20px;
     border-radius: 20px;
     background-color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
 }
 
 .hero-content a:hover {
@@ -103,9 +115,18 @@ h1 {
     padding: 20px;
 }
 
-.container-content h2, .container-content p {
+.container-content h2 {
     color: black;
     text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.container-content p {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
 }
 
 .container-content {
@@ -125,6 +146,8 @@ h1 {
     font-size: 20px;
     background-color: black;
     border-radius: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
 }
 
 .entradas {
