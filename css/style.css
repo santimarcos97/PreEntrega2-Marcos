@@ -262,18 +262,19 @@ h1 {
 }
 
 .car-content h2 {
-    font-size: 1,2rem;
+    font-size: 1.5rem;
     text-align: center;
-    background-color: red;
+    background-color: rgba(124, 1, 1, 0.404);
 }
 
 .car-content a {
     color: white;
-    padding: 10px;
+    padding: 5px;
     font-size: 1rem;
-    border-radius: 20px;
-    border: 1px solid white;
+    border-radius: 15px;
+    border: 1px solid rgb(124, 1, 1);
     text-align: center;
+    background-color: rgb(124, 1, 1);
 }
 
 .car-item {
