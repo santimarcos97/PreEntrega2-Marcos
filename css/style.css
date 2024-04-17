@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: grey;
+    background-color: #f8d1b7;
     font-family: sans-serif, Segoe UI, Tahoma, Geneva, Verdana;
 }
 
@@ -14,7 +14,7 @@ a {
 }
 
 .bg-red {
-    background-color: rgb(124, 1, 1);
+    background-color: #e4482c;
 }
 
 .font-sans {
@@ -40,11 +40,16 @@ h1 {
     flex-direction: row;
     flex-wrap: nowrap;
     padding: 10px;
+    background-color: rgb(163, 163, 163);
 }
 
 @media (max-width: 1024px) {
     .hero {
         flex-direction: column;
+    }
+
+    .hero-content img {
+        width: 80%;
     }
 }
 
@@ -57,7 +62,7 @@ h1 {
 }
 
 .hero-content { 
-   padding: 30px;
+   padding: 10px;
    display: flex;
    flex-direction: column;
    gap: 20px;
@@ -104,7 +109,7 @@ h1 {
 .hero-article {
     display: flex;
     padding-top: 40px;
-    background-color: rgb(163, 163, 163);
+    background-color: grey;
 }
 
 @media (max-width: 1024px) {
@@ -187,12 +192,14 @@ h1 {
 
 
 .entradas a:hover {
-    background-color: red;
+    background-color: #480000;
     border-radius: 30px;
 }
 
 .hero-entradas {
     display: flex;
+    flex-grow: 1;
+    flex-basis: 450px;
     flex-direction: column;
     width: 600px;
     position: relative;
@@ -268,6 +275,24 @@ h1 {
     gap: 10px;
 }
 
+@media (max-width:768px) {
+    .cars {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+        "car1 car1"
+        "car2 car2"
+        "car3 car3"
+        "car4 car4"
+        "car5 car5"
+        "car6 car6"
+        "car7 car7"
+        "car8 car8"
+        "car9 car9"
+        "car10 car10";
+    }
+}
+
 .car-item img {
     width: 100%;
     object-fit: cover;
@@ -290,7 +315,8 @@ h1 {
 .car-content h2 {
     font-size: 1.5rem;
     text-align: center;
-    background-color: rgba(124, 1, 1, 0.404);
+    background-color: #f2a3896e;
+    font-weight: bold;
 }
 
 .car-content a {
@@ -300,7 +326,7 @@ h1 {
     border-radius: 15px;
     border: 1px solid rgb(124, 1, 1);
     text-align: center;
-    background-color: rgb(124, 1, 1);
+    background-color: #eb755a;
 }
 
 .car-item {
@@ -362,6 +388,30 @@ h1 {
     "notice3 notice4 notice4 notice4";
     padding: 10px;
     gap: 10px;
+}
+
+@media (max-width:768px) {
+    .notice-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+        "notice1 notice1"
+        "notice2 notice2"
+        "notice3 notice3"
+        "notice4 notice4";
+    }
+
+    .notice-content {
+        text-align: center;
+    }
+
+    .notice-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .notice-content a {
+        font-size: 1.2rem;
+    }
 }
 
 .notice-box img {
