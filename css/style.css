@@ -363,21 +363,14 @@ h1 {
 }
 
 .entradas-content {
-    padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
     justify-content: center;
 }
 
-.hero-entradas span {
-    background-color: red;
-    padding: 10px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bold;
-    position: absolute;
-    top: 15px;
-    left: -20px;
+.entradas-content:hover img:not(:hover){
+    filter: grayscale(100%);
 }
 
 /* car section */
