@@ -6,7 +6,7 @@
 
 body {
     background-color: #f8d1b7;
-    font-family: sans-serif, Segoe UI, Tahoma, Geneva, Verdana;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 a {
@@ -14,7 +14,7 @@ a {
 }
 
 .bg-red {
-    background-color: #e4482c;
+    background-color: #b40000;
 }
 
 .font-sans {
@@ -47,6 +47,7 @@ h1 {
 @media (max-width: 1024px) {
     .hero {
         flex-direction: column;
+        font-size: 1rem;
     }
 
     .hero-content img {
@@ -104,7 +105,7 @@ h1 {
     background-color: red;
     border-radius: 30px;
     padding: 10px;
-    transition: 2s;
+    transition: 0.5s;
 }
 
 .hero-article {
@@ -120,6 +121,7 @@ h1 {
 @media (max-width: 1024px) {
     .container-section {
         flex-direction: column;
+        font-size: 1rem;
     }
 
     .hero-article img {
@@ -129,6 +131,7 @@ h1 {
 
     .hero-article {
         flex-direction: column;
+        font-size: 1rem;
     }
 }
 
@@ -136,7 +139,7 @@ h1 {
     background-color:red;
     border-radius: 30px;
     padding: 7px;
-    transition: 2s;
+    transition: 0.5s;
 }
 
 .hero-article img {
@@ -181,17 +184,130 @@ h1 {
     font-weight: bold;
 }
 
+.pilotos-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "piloto1 piloto1 piloto2 piloto2"
+    "piloto3 piloto3 piloto4 piloto4"
+    "piloto5 piloto5 piloto6 piloto6";
+    padding: 10px;
+    gap: 10px;
+}
+
+@media (max-width:768px) {
+    .pilotos-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+        "piloto1 piloto1"
+        "piloto2 piloto2"
+        "piloto3 piloto3"
+        "piloto4 piloto4"
+        "piloto5 piloto5"
+        "piloto6 piloto6";
+    }
+
+    .driver-content {
+        text-align: center;
+    }
+
+    .driver-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .driver-content a {
+        font-size: 1.2rem;
+    }
+}
+
+.pilotos-box img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+}
+
+.driver-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    color: white;
+    gap: 10px;
+}
+
+.driver-content h2 {
+    font-size: 1.8rem;
+    background-color: rgba(255, 0, 0, 0.582);
+    border: 1px solid white;
+}
+
+.driver-content a {
+    color: white;
+    padding: 5px;
+    font-size: 1.5rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color:  rgba(255, 0, 0, 0.432);
+}
+
+.driver-content a:hover {
+    background-color: black;
+    transition: 0.5s;
+}
+
+.pilotos-box {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.p1 {
+    grid-area: piloto1;
+}
+
+.p2 {
+    grid-area: piloto2;
+}
+
+.p3 {
+    grid-area: piloto3;
+}
+
+.p4 {
+    grid-area: piloto4;
+}
+
+.p5 {
+    grid-area: piloto5;
+}
+
+.p6 {
+    grid-area: piloto6;
+}
+
 .entradas {
     display: flex;
     padding: 20px;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: space-around;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.5rem;
 }
 
 @media (max-width:768px) {
     .entradas {
         text-align: center;
+        font-size: 1.5rem;
     }
 }
 
@@ -258,13 +374,6 @@ h1 {
     left: -20px;
 }
 
-.contacto {
-    display: flex;
-    flex-direction: row;
-    width: 50%;
-    height: 100%;
-}
-
 /* car section */
 
 .cars {
@@ -320,8 +429,9 @@ h1 {
 .car-content h2 {
     font-size: 1.5rem;
     text-align: center;
-    background-color: #f2a3896e;
+    background-color: #fd110579;
     font-weight: bold;
+    border-radius: 15px;
 }
 
 .car-content a {
@@ -329,9 +439,9 @@ h1 {
     padding: 5px;
     font-size: 1rem;
     border-radius: 15px;
-    border: 1px solid rgb(124, 1, 1);
+    border: 1px solid black;
     text-align: center;
-    background-color: #eb755a;
+    background-color: #fd1005;
 }
 
 .car-item {
@@ -389,8 +499,9 @@ h1 {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     grid-template-areas: 
-    "notice1 notice1 notice1 notice2"
-    "notice3 notice4 notice4 notice4";
+    "noticia1 noticia1 noticia1 noticia2"
+    "noticia3 noticia4 noticia4 noticia4"
+    "noticia5 noticia5 noticia6 noticia6";
     padding: 10px;
     gap: 10px;
 }
@@ -400,10 +511,12 @@ h1 {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
         grid-template-areas:
-        "notice1 notice1"
-        "notice2 notice2"
-        "notice3 notice3"
-        "notice4 notice4";
+        "noticia1 noticia1"
+        "noticia2 noticia2"
+        "noticia3 noticia3"
+        "noticia4 noticia4"
+        "noticia5 noticia5"
+        "noticia6 noticia6";
     }
 
     .notice-content {
@@ -422,7 +535,7 @@ h1 {
 .notice-box img {
     width: 100%;
     object-fit: cover;
-    object-position: center;
+    object-position: top;
 }
 
 .notice-content {
@@ -452,7 +565,7 @@ h1 {
 
 .notice-content a:hover {
     background-color: rgba(0, 0, 0, 0.445);
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .notice-box {
@@ -463,19 +576,27 @@ h1 {
 }
 
 .n1 {
-    grid-area: notice1;
+    grid-area: noticia1;
 }
 
 .n2 {
-    grid-area: notice2;
+    grid-area: noticia2;
 }
 
 .n3 {
-    grid-area: notice3;
+    grid-area: noticia3;
 }
 
 .n4 {
-    grid-area: notice4;
+    grid-area: noticia4;
+}
+
+.n5 {
+    grid-area: noticia5;
+}
+
+.n6 {
+    grid-area: noticia6;
 }
 
 .carousel-item {
@@ -496,12 +617,14 @@ h1 {
     object-position: top;
 }
 
+/* tienda */
+
 /* cards tienda */
 
 .product-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 50px;
     gap: 20px;
 }
 
@@ -510,8 +633,24 @@ h1 {
   flex-direction: column;
   align-items: center;
   border: 1px solid black;
-  box-shadow: 7px 7px 0px #e4482c93;
+  box-shadow: 7px 7px 0px #fd110579;
+  border-radius: 15px;
+  overflow: hidden;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
 }
+
+.prod a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    gap: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    color: black;
+    background-color: #fd110579;
+}
+ 
 
 .prod img {
     width: 100%;
@@ -521,5 +660,128 @@ h1 {
 
 .prod div {
   padding: 20px;
-  background-color: #eee;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
 }  
+
+
+/* equpos tienda */ 
+
+.team {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    "team1 team2 team3"
+    "team4 team5 team6"
+    "team7 team8 team9";
+    padding: 10px;
+    gap: 20px;
+}
+
+@media (max-width:768px) {
+    .team {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+        "team1 team1"
+        "team2 team2"
+        "team3 team3"
+        "team4 team4"
+        "team5 team5"
+        "team6 team6"
+        "team7 team7"
+        "team8 team8"
+        "team9 team9";
+    }
+}
+
+.team-item img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    border: 1px solid rgb(124, 1, 1);
+}
+
+.team-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    color: white;
+    gap: 10px;
+}
+
+.team-content h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: #fd110579;
+    font-weight: bold;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+.team-content a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: white;
+    padding: 5px;
+    font-size: 1rem;
+    border-radius: 15px;
+    text-align: center;
+    background-color: #fd1005;
+    border: 1px solid black;
+}
+
+.team-item {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 350px;
+}
+
+.t1 {
+    grid-area: team1;
+}
+
+.t2 {
+    grid-area: team2;
+}
+
+.t3 {
+    grid-area: team3;
+}
+
+.t4 {
+    grid-area: team4;
+}
+
+.t5 {
+    grid-area: team5;
+}
+
+.t6 {
+    grid-area: team6;
+}   
+
+.t7 {
+    grid-area: team7;
+}
+
+.t8 {
+    grid-area: team8;
+}
+
+.t9 {
+    grid-area: team9;
+}
+
+
