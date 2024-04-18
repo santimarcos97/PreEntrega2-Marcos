@@ -11,6 +11,8 @@
 </head>
 <body>
 
+  <!-- navbar -->
+
     <header>
         <nav class="navbar bg-red navbar-expand-md font-sans">
             <div class="container-fluid">
@@ -47,9 +49,37 @@
           </nav>
     </header>
 
-    <main>
+    <!-- contact section -->
+
+    <main class="main-contact">
+
+      <form action="">
+
+        <h2>CONTACTO</h2>
+
+        <div class="input-group">
+
+          <label for="name">Nombre</label>
+          <input class="input-contact" type="text" name="name" id="name" placeholder="nombre">
+
+          <label for="phone">Telefono</label>
+          <input class="input-contact" type="tel" name="phone" id="phone" placeholder="telefono">
+
+          <label for="email">Email</label>
+          <input class="input-contact" type="email" name="email" id="email" placeholder="email">
+
+          <label for="message">Mensaje</label>
+          <textarea name="message" id="message" cols="30" rows="5" placeholder="mensaje"></textarea>
+
+          <input class="input-contact" class="btn" type="submit" value="Enviar">
+
+        </div>
+
+      </form>
 
     </main>
+
+    <!-- footer -->
 
     <footer class="py-1 bg-red font-sans">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
